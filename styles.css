@@ -1,0 +1,55 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+table {
+    margin-top: 20px;
+}
+
+a {
+    display: block;
+    margin-top: 10px;
+} */
+/* Add your custom styles here */
+body {
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.alert {
+    margin-top: 20px;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+.btn-secondary {
+    margin-top: 20px;
+}

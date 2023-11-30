@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS language_learning;
+
+USE language_learning;
+
+CREATE TABLE IF NOT EXISTS words (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    word VARCHAR(50) NOT NULL,
+    meaning VARCHAR(100) NOT NULL
+);
