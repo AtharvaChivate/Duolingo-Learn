@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,11 @@
     <link rel="stylesheet" href="styles.css">
     <title>Add Word</title>
 </head>
+
 <body class="container">
     <h1 class="mt-5">Add a Word</h1>
     <?php
+    include 'connection.php';
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $word = $_POST["word"];
         $meaning = $_POST["meaning"];
@@ -20,7 +23,7 @@
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
-        
+
         // Insert the word into the database
         $sql = "INSERT INTO words (word, meaning) VALUES ('$word', '$meaning')";
         $result = $conn->query($sql);
@@ -55,4 +58,5 @@
         document.getElementById("meaning").value = "";
     </script>
 </body>
+
 </html>

@@ -1,10 +1,6 @@
 <?php
+include 'connection.php';
 // Connect to the database (replace these details with your database credentials)
-$conn = new mysqli("localhost", "root", "Shri*111", "language_learning");
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
 
 // Handle deletion when the Delete button is clicked
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["delete_id"])) {
