@@ -1,10 +1,9 @@
 import React from 'react'
 import './index.css'
-import Navbar from './components/Navbar'
-import InputGroup from './components/InputGroup'
-import Blob from './components/Blob'
 import { createTheme, ThemeProvider } from '@mui/material';
-
+import Home from './components/Home'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Allwords from './components/Allwords';
 const theme = createTheme({
   typography: {
     fontFamily: [
@@ -18,11 +17,13 @@ const App = () => {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <div style={{ display: 'flex', flexDirection: 'column', justifyContent:'center', alignItems:'center' }}>
-          <Navbar />
-          <Blob/>
-          <InputGroup />
-        </div>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Home />} />
+              <Route path='/allwords' element={<Allwords/>}/>
+            <Route/>
+          </Routes>
+        </BrowserRouter>
       </ThemeProvider>
     </>
   )
