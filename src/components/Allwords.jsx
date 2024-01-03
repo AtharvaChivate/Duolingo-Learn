@@ -7,9 +7,8 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TablePagination from "@mui/material/TablePagination";
 import TableRow from "@mui/material/TableRow";
-import Navbar from "./Navbar";
 import { Grid } from "@mui/material";
-import Blob from './Blob'
+import Blob from "./Blob";
 
 const columns = [
   { id: "name", label: "Name", minWidth: 170 },
@@ -50,7 +49,6 @@ export default function StickyHeadTable() {
 
   return (
     <>
-      <Navbar />
       <Grid
         container
         direction="column"
@@ -61,7 +59,7 @@ export default function StickyHeadTable() {
         <Paper
           sx={{
             width: "80%",
-            overflow: "hidden"
+            overflow: "hidden",
           }}
         >
           <TableContainer
@@ -133,7 +131,7 @@ export default function StickyHeadTable() {
             onRowsPerPageChange={handleChangeRowsPerPage}
           />
         </Paper>
-        <Blob/>
+        <Blob />
       </Grid>
     </>
   );

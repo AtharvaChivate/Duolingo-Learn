@@ -1,7 +1,6 @@
 import React from "react";
 import InputGroup from "./InputGroup";
 import Blob from "./Blob";
-import Navbar from "./Navbar";
 
 const Home = () => {
   return (
@@ -14,7 +13,6 @@ const Home = () => {
           alignItems: "center",
         }}
       >
-        <Navbar />
         <Blob />
         <InputGroup />
       </div>
